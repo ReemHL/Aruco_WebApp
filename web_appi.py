@@ -36,6 +36,9 @@ st.markdown(
 st.sidebar.title('Segmentation Sidebar')
 st.sidebar.subheader('Site Pages')
 
+# add dropdown to select pages on left
+app_mode = st.sidebar.selectbox('A',
+                                  ['B', 'C'])
 # Load Aruco detector
 parameters = cv2.aruco.DetectorParameters_create()
 aruco_dict = cv2.aruco.Dictionary_get(cv2.aruco.DICT_5X5_50)
