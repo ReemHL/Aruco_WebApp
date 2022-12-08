@@ -39,6 +39,29 @@ st.sidebar.subheader('Site Pages')
 # add dropdown to select pages on left
 app_mode = st.sidebar.selectbox('What?',
                                   ['A','B', 'C'])
+
+# About page
+if app_mode == 'A':
+    st.markdown('In this app')
+    
+    
+    # side bar
+    st.markdown(
+        """
+        <style>
+        [data-testid="stSidebar"][aria-expanded="true"] . div:first-child{
+            width: 350px
+        }
+
+        [data-testid="stSidebar"][aria-expanded="false"] . div:first-child{
+            width: 350px
+            margin-left: -350px
+        }    
+        </style>
+
+        """,
+        unsafe_allow_html=True,)
+    
 # Load Aruco detector
 parameters = cv2.aruco.DetectorParameters_create()
 aruco_dict = cv2.aruco.Dictionary_get(cv2.aruco.DICT_5X5_50)
