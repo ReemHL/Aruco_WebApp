@@ -1,7 +1,7 @@
 import streamlit as st
 import numpy as np # constructing arrays 
 import skimage.io as io # read images in from files on your computer, to a form usable in a Python program
-import matplotlib.pyplot as plt # what does?
+#import matplotlib.pyplot as plt # what does?
 from PIL import Image # data visualization, typically in the form of plots, graphs and charts
 import glob # list of pics
 from PIL.ExifTags import TAGS # what does?
