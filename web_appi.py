@@ -8,6 +8,7 @@ from PIL.ExifTags import TAGS # what does?
 import cv2 as cv2 # what does?
 
 logo = 'logo.png'
+mouse= 'mouse.jpg'
 
 # main page
 st.set_page_config(page_title='Bring It', page_icon = logo , layout = 'wide', initial_sidebar_state = 'auto')
